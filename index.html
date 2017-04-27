@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scran</title>
+<meta name="description" content="#" />
+<meta name="keywords" content="#" />
+<meta name="author" content="#" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link rel="shortcut icon" href="#"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+	<script src="auth.js"></script>
+	<script src="functions.js"></script>
+	
+
+
+</head>
+<body onLoad="MM_preloadImages('img/info_roll.png'); ">
+    <div id="wrapper"> <!--main container-->
+
+                           <div class="info_box"> <!--info pop up box-->
+
+                                      <h3>Welcome to Scran!</h3>
+                                     <p id="info_text">Feel free to use this web app in order to find what your little heart is craving for.
+                                     <br /> <br />
+                                     	Is it pasta? Pizza? Cazlone? Seafood? We have it all!
+                                     <br/> <br />
+                                     	Just type in your Postcode in the field and click Search.
+                                     <br/> <br />
+                                     	Then type what menu item you are looking for and click Search again.
+                                     </p>
+
+                           </div> <!--info pop up box end-->
+
+			  	<div id="overlay"> <!--black overlay after the search button is clicked-->
+					   
+					    <div id="close_button"> <!--close button button -->
+					<a href="#" onClick="history.go(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Close','','img/close_x_roll.png',1)"><img src="img/close_x.png" alt="Close button" width="51" height="51" id="Close"></a> </div> 
+
+					   <div id="list"> <!--this is the list of restaurants that pops up with the overlay-->
+				   			
+				   			<!--<button id="prev" type='button'>prev</button>
+							<input id="page"/>
+							<button id="goto" type='button'>Go To Page</button>
+							<button id="more" type='button'>next</button>-->
+					   			
+					   </div>
+
+				</div>   <!--overlay end-->
+
+	  <div id="landing"> <!--parent container for whole page-->
+
+					<div id="info"> <!--info button, triggers the pop up box -->
+						<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Info','','img/info_roll.png',1)"><img src="img/info.png" alt="info" width="51" height="51" id="Info"></a>
+					</div> <!--info button end-->
+
+			<div class="container"> <!--container for the middle bit: logo, search and slogan-->
+
+					<div id="logo"> <!--Scran logo-->
+						<img src="img/logo1.png" width="230" height="82" alt="Scran Logo"/>
+					</div>
+
+					  <form action="" class="Search" id="formPostcode" onsubmit="return false;">
+                        <!--Search field with button-->
+                        <input class="Search-box" type="search" id="search-box-1" autocomplete="off" placeholder="Enter Postcode" name="postcode" autofocus />
+                        <input class="search_button" id="search_button_1" type="button" />
+                    </form><!--end of search field-->
+
+	                   <!-- <form action="" class="Search" id="formCuisine" style="display: none;" onsubmit="return false;"> 
+                    	
+                    		<input class="Search-box" type="search" id="search-box-2" autocomplete="off" placeholder="Enter Cuisine" />
+                    		<input class="search_button" id="search_button_2" type="button" />
+                    </form>	<!--end of search field-->
+						<h1 id="postcode1">Save time use Scran!</h1>
+
+			</div> <!--container end-->
+
+
+    </div>  <!--landing end -->
+
+
+</div> <!--wrapper end -->
+</body>
+</html>
